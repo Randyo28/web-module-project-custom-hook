@@ -11,7 +11,6 @@ const App = () => {
   
   return (
     <div className={darkMode ? "dark-mode App" : "App"}>
-      {/* <h1>{last}</h1> */}
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Charts coinData={coinData} />
     </div>

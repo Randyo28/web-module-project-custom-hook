@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import useLocalStorage from './UseLocalStorage';
 
-const useDarkMode = (key, initialValue) => {
+const useDarkMode = () => {
     const [coinData, setCoinData] = useState([]);
-    const [darkMode, setDarkMode] = useLocalStorage("dark mode")
+    const [darkMode, setDarkMode] = useLocalStorage("Dark-mode")
 
     useEffect(() => {
         axios
